@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.fixed-width {
+  width:1260px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height:100%;
+}
+
+header {
+  background-color:#FBFBFB;
+  height:74px;
+  display:flex;
+  align-items:center;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+  list-style: none;
+  font-family:'Roboto';
+  font-size: 16px;
+  margin-right:30px;
+  
+}
+
+a:hover {
+  color:rgb(252,85,124);
+  border-bottom: 1px dotted red;
+}
+
+#phone {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+button {
+  border: 1px solid rgb(252, 85, 124);
+    color: rgb(252, 85, 124);
+    padding: 12px 40px 10px;
+    margin-left: 30px;
+    background-color: #FBFBFB;
+}
+
+
+button:hover {
+  background-color: #F7F2F0;
+}
+
+#contact-container {
+  height:100%;
+  float:right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border:1px solid red; */
+ 
+}
+
+
+nav {
+  float:left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border:1px solid red; */
+}
+
+
+
+section {
+  height:700px; 
+  background-color:#FBFBFB;
+  display:flex;
+  align-items:center;
+}
+
+
+#contact-container2 {
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* border:1px solid red; */
+ flex-wrap:wrap;
+ background: url(../img/DmitryAlekseev.png) no-repeat 100% ;
+ background-position: right;
+ background-size: contain;
+}
+
+
+
+h1 {
+  color:black;
+  font-family:'Roboto';
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom:23px;
+  
+}
+
+section button {
+  font-family: "Tahoma";
+  font-size:18px;
+  color:white;
+  padding:15px 38px;
+  background-color:#ff4e2e;
+  border:0px solid transparent;
+  margin:0 1px;
+}
+
+section button:hover {
+  background-color:#B53705;
+}
+
+
+
+section span {
+  font-family: "Tahoma";
+  font-size:25px;
+  float:left;
+  color:#8993ad;
+  margin-bottom:46px;
+}
+
+
+
+
+@media (max-width: 1200px){
+  nav{
+    margin-top:10px;
+    flex-direction: column;
+  }
+
+
+  header {
+    justify-content: center;
+    align-content:center;
+  }
+
+  a {
+    padding-bottom: 10px;
+    margin:0px auto;  
+  }
+
+  #contact-container {
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-wrap:wrap;
+margin:0px;  
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#contact-container span {
+  display:none;
+}
+
+
+@media (max-width: 900px){
+  nav{
+    margin-top:10px;
+    flex-direction: column;
+  }
+
+  #contact-container2 {
+    background:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
